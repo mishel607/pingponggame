@@ -1,35 +1,44 @@
-Created in 2016
+**Ping Pong Game
+Overview**
+Ping Pong Game is a Java-based, two-player game that replicates the classic table tennis experience. It features smooth gameplay mechanics, graphical elements, and interactive features such as ball movement, paddle control, and scoring.
+This project was originally created in 2016 and has been uploaded to GitHub in 2024 for preservation, sharing, and potential further enhancement.
+
 **Features**
-Ball Movement: The ball moves across the screen with adjustable velocities and bounces off the walls and paddles.
-Paddle Control: Players can control paddles vertically using keyboard inputs.
-Score Tracking: Keeps track of the score during the game.
-Graphics: Uses Java's Graphics class to render the ball, paddles, and game panel.
-Sound Effects: Plays sound when the ball hits the paddle (optional feature).
-Responsive UI: Runs in a 600x600 pixel JFrame window.
+Ball Movement: The ball moves across the screen with adjustable velocities and bounces off walls and paddles.
+Paddle Control: Players control paddles vertically using keyboard inputs for responsive gameplay.
+Score Tracking: Tracks and displays scores during the game.
+Graphics: Utilizes Java's Graphics class to render the ball, paddles, and game panel.
+Optional Sound Effects: Plays sound when the ball hits the paddle (future addition).
 **Project Structure**
-The project consists of the following main components:
+The project consists of the following components:
 
-Ball (Ball.java)
+Ball (Ball.java):
+Manages the ball's position, movement, and collision detection.
 
-Handles ball movement, velocity, and rendering.
-Uses x and y coordinates to update the ball's position.
-Player and Player2 (Player.java and Player2.java)
+Player and Player2 (Player.java, Player2.java):
+Represent the paddles controlled by the two players.
 
-Represent the two paddles controlled by players.
-Use velocity for vertical movement and update their positions accordingly.
-GamePanel (GamePanel.java)
+GamePanel (GamePanel.java):
+Core game logic, including updating game objects and handling input.
 
-**Core game logic and rendering.**
-Implements ActionListener and KeyListener for handling user inputs and updating the game state.
-Pong (Pong.java)
+Pong (Pong.java):
+The main class that sets up the game window and initializes the game panel.
 
-**Entry point of the application.**
-Sets up the game window and initializes the game panel.
 **How to Run**
-Ensure you have Java JDK installed on your machine.
-Compile the source code using javac:
-**bash**
-javac Pong.java GamePanel.java Ball.java Player.java Player2.java
-**Run the program:**
-bash
-java Pong
+Ensure you have Java JDK installed.
+Compile the source files:
+javac src/*.java
+**Run the game:**
+java src/Pong
+**Controls**
+Player 1:
+Move Up: UP ARROW
+Move Down: DOWN ARROW
+Player 2:
+Move Up: A
+Move Down: Z
+**Future Improvements**
+Add scoring display on the game screen.
+Implement sound effects when the ball hits a paddle.
+Introduce multiple difficulty levels and AI opponents.
+Add a game menu and pause functionality.
