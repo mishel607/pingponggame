@@ -1,6 +1,3 @@
-**Ping Pong Game**
-**Description**
-This project implements a two-player Ping Pong game built in Java. It simulates a ping pong game using graphical elements and includes interactive gameplay features such as ball movement, paddle control, scoring, and sound effects.
 
 **Features**
 Ball Movement: The ball moves across the screen with adjustable velocities and bounces off the walls and paddles.
@@ -35,5 +32,4 @@ Compile the source code using javac:
 javac Pong.java GamePanel.java Ball.java Player.java Player2.java
 **Run the program:**
 bash
-Copy code
 java Pong
